@@ -1,0 +1,33 @@
+/* XPM */
+static char *exceed_runtime[] = {
+/* width height num_colors chars_per_pixel */
+"    32    22        4            1",
+/* colors */
+". c #c0c0c0",
+"# c #24d914",
+"a c #000000",
+"b c #ff0000",
+/* pixels */
+".aaaaaaaaaaaaaaaaaaaaaaaaababbbb",
+".a#######################bbbbbbb",
+".a######################bbbbbbbb",
+".a####################bbbbbbbbbb",
+".a###################bbbbbbbbbbb",
+".a##################bbbbbbbb####",
+".a#################bbbbbbbbb####",
+".a#################bbbbbbb######",
+".a##bbbb#########bbbbbb#########",
+".a##bbbbb########bbbbbbb########",
+".a#bbbbbbbb#####bbbbb###########",
+".abbbbbbbbbb###bbbbbbb##########",
+".abbbbbbbbbbb##bbbbbbb##########",
+".a####bbbbbbbbbbbbbbb###########",
+".a####bbbbbbbbbbbbb#############",
+".a######bbbbbbbbbbbb############",
+".a#######bbbbbbbbb##############",
+".a#######bbbbbbbbbb#############",
+".a########bbbbbbbb##############",
+".a########bbbbbbbb##############",
+".a##############################",
+".a##############################"
+};

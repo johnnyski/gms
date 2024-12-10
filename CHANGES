@@ -1,0 +1,50 @@
+CHANGES for gms
+===============
+
+v1.6 (12/21/99)
+---------------
+* Changed the label color of the start up form to improve visibility.
+* Changed the print feature -- program can send data from browser to a 
+  printer instead of to stderr.
+* Added jobnum in the 'last received msg'.
+* Moved buttons' positions close together on forms.
+* Added a satus summary report form that shows the status summary of either
+  tapes, levels, or products.
+* Removed the old log report form and the 'get' button on the main form.
+* Uses configure.
+
+v1.5 (12/19/97)
+----------------
+* Can delete entry with long program name and/or long tape ID.
+* Color coded programs and neighbors in the neighbors and progs lists.
+
+v1.4 (12/17/97)
+--------------
+Mods to work w/ monitorps on port 5000 only
+
+v1.3 (11/14/97)
+------------
+1. Upgraded to use xforms v0.86 (It can be compiled with v0.81).
+2. Requires Xpm library if using xforms v0.86.
+
+v1.2 (6/30/97)
+-------------
+1. Sets group ID by calling setpgrp().
+
+
+v1.1 (5/8/97)
+-------------
+1. Modified the Makefile
+2. Added a new configurative option, 'Administrative Functions', to allow 
+   adding/deleting host to monitorps' neighbor list.
+3. Other minor modifications.
+4. Fixed bug w. r. t. delete jobs
+5. Improved the reporting of communication status--this helps the user know
+   if the communication between monitorps and gms is good.
+6. Fixed bug w.r.t. the X server got messed up after starting 'gms' several
+   times.
+
+
+v1.0 (1/13/97)
+--------------
+Initial version.

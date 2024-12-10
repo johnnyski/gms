@@ -1,0 +1,78 @@
+#! /usr/local/bin/perl
+#-*-Perl-*-
+
+# This program extracts line from the logfile or stdin that begins with 
+# "status:". It modifies the status field of the msg if it encounters any
+# of the following key words: 'abort', 'core', 'error', 'warning', or 
+# 'segmentation fault'. 
+# i.e. 'core', 'error', or 'segmentation fault' ==> failed
+#      'abort' or warning'                      ==> warning
+#It outputs the result to stdout.
+
+sub usage {
+	print STDERR "Usage: $0 [-f logfile]\n";
+	exit(-1);
+}
+
+if ($#ARGV < 0) {
+	# read file from stdin
+	@logfile = <STDIN>;
+}
+elsif ($#ARGV > 0) {
+	# read file from the specified file
+	if ($ARGV[$#ARGV-1] ne "-f") {
+	    do usage();
+	}	
+	$filename = $ARGV[$#ARGV];
+    open(LOG, $filename) || die "Can't open $filename:$!\n";
+	@logfile = <LOG>;
+}
+else {
+	do usage();
+}
+
+# extract line that begins with "status:", modify its status field if 
+# needed (e.g. encounter 'core', 'segmentation fault', 'warning', 'abort',
+# or 'error'), and print it to stdout.
+$failure = 0;								# 
+$warning = 0;
+$FAIL_STR = "failed";
+$WARNING_STR = "warning";
+$RUNNING_STR = "running";
+while (@logfile) {
+	$line = shift @logfile;
+
+	if (($line =~ /core/) || ($line =~ /[Ss]egmentation fault/) ||
+		    ($line =~ /[Ee][Rr][Rr][Oo][Rr]/)) {
+		$failure = 1;
+	}
+	elsif (($line =~ /[Aa]bort/) || ($line =~ /[Ww][Aa][Rr][Nn][Ii][Nn][Gg]/)){
+		$warning = 1;
+	}
+
+	if ($line =~ /^status:/) {  # status line
+		@stat_msg = split(' ', $line);
+
+		# remove 'status:' from line
+		$stat_msg[0] = "";
+		# modify status field if appliable
+		$stat_str = $stat_msg[$#stat_msg];
+		if ($stat_str eq $RUNNING_STR) { 
+		}
+		elsif ($failure == 1 && $stat_str ne $FAIL_STR) {
+			$stat_msg[$#stat_msg] = $FAIL_STR;
+		}
+		elsif ($warning == 1 && $stat_str ne $FAIL_STR && 
+			   $stat_str ne $WARNING_STR) {
+			$stat_msg[$#stat_msg] = $WARNING_STR;
+		}
+		
+		# output to stdout
+		print STDOUT join(' ',@stat_msg), "\n";
+		# reset values
+		$failure = 0;
+		$warning = 0;
+	}
+	
+}
+

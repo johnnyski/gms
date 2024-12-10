@@ -1,0 +1,36 @@
+/* XPM */
+static char *options[] = {
+/* width height num_colors chars_per_pixel */
+"    32    22        7            1",
+/* colors */
+". c #c0c0c0",
+"# c #000000",
+"a c #0000ff",
+"b c #406666",
+"c c #ffccff",
+"d c #bf6633",
+"e c #bfcccc",
+/* pixels */
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeee###eeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeee#eee#eeebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeee#eebe",
+"eeee##########eeeeeeeee#eeeeeebe",
+"eeee##########eeeeeeeee#eeeeeebe",
+"ee#dd#########d########eaaaeeebe",
+"ee#dd#########d########eaaeeeebe",
+"eee#dddddddddd#eeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeeee#eee#eebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeeee#####eebe",
+"eeee##########eeeeeeeeeeeeeeeebe",
+"eee#dddddddddd#eeeeeeee###eeeebe",
+"ee#dddddddddddd#eeeeeeeeeeeeeebe",
+"ee#dddddddddddd#eeeeeeeeeeeeeebe",
+"eee#dddddddddd#eeeeeeee###eeeebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeebe"
+};

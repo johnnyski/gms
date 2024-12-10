@@ -1,0 +1,56 @@
+v1.6 12/21/99
+
+README for gms package.
+
+This package contains program(s) for monitoring the executions of Ground
+Validation Software (GVS).
+
+The executable file(s) are:
+	gms      -- GVS monitoring program (Will be created by the makefile).
+	rptgen   -- Script called by gms to generate report.
+
+
+REQUIREMENTS:
+-------------
+1. The required libraries and software are:
+	* xforms -- Can be found at: http://bragg.phys.uwm.edu/xforms
+    * Xpm (Required by xforms v0.86) -- 
+         Can be found at: http://sunsite.unc.edu/pub/X11/contrib/libraries
+
+    * monitorps v1.8 -- Obtain via anonymous ftp to trmm.gsfc.nasa.gov
+         in pub/software. gms will not work w/ earlier versions as
+         the port number monitorps uses changed.
+
+2. The required GNU package(s) are available via ftp to ftp.uu.net.
+   The package(s) are:
+
+        perl
+
+3. Compilers:  C. GNU compiler is acceptable.
+   
+4. Flatform:  HP or Linux (Tested on Linux)
+
+
+INSTALLATION INSTRUCTIONS:
+-------------------------
+
+configure     (--prefix=/usr/local/trmm/GVBOX  is the default.)
+make install
+
+
+EXECUTION NOTE:
+---------------
+1. Have 'monitorps' running on your machine before executing 'gms'.
+2. Besure the following environmental variables are set:
+    HOME           = your home directory, i.e., /user/nguyen.
+	HOST           = Machine name, i.e., raindrop3.
+	HOSTNAME       = Machine name including its domain name, 
+                     i.e., raindrop3.gsfc.nasa.gov
+    GMS_ICONS_PATH = Directory of images.  See the Makefile.
+
+
+QUESTIONS:
+----------
+
+Please contact AEAP/TRMM Office help via e-mail at help@trmm.gsfc.nasa.gov.
+

@@ -1,0 +1,36 @@
+/* XPM */
+static char *save[] = {
+/* width height num_colors chars_per_pixel */
+"    32    22        7            1",
+/* colors */
+". c #000000",
+"# c #406666",
+"a c #409966",
+"b c #ffcc99",
+"c c #ffccff",
+"d c #ffffcc",
+"e c #bfcccc",
+/* pixels */
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeec",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeec",
+"aa.eeeeeeeeeeeeeeeeeeeeeeeeeeeec",
+"aaa.eeeeeeeeeeeeeeeeeeeeeeeeeeec",
+"aaaaaaeeeeeeeeeeeeeeeeeeeeeeeeec",
+"aaaaaaeeeeeeeeeeeeeeeeeeeeeeeeec",
+"aaaaaa.eeeeeeeeeeeeeeeeeeeeeeeec",
+"aaa.bbbbbbb....eeeee......eeeeec",
+"aa.bbbbbbbbbbbb.ee..dddddd.eeeec",
+"aa.bbbbbbbbbbbb.ee..dddddd.eeeec",
+"..e.bbbbbbbbb.................ec",
+"eeee...bb..b.bbbddddddddddddd.ec",
+"eeeeee.b.bb.bbb.ddddddddddddd.ec",
+"eeeeeedd.....dddddddddddddddd.ec",
+"eeeeeedd.....dddddddddddddddd.ec",
+"eeeeeeddddddddddddddddddddddd.ec",
+"eeeeeeddddddddddddddddddddddd.ec",
+"eeeeeeddddddddddddddddddddddd.ec",
+"eeeeeeddddddddddddddddddddddd.ec",
+"eeeeeeddddddddddddddddddddddd.ec",
+"eeeeeeddddddddddddddddddddddd.ec",
+"eeeeee........................ec"
+};

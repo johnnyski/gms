@@ -1,0 +1,36 @@
+/* XPM */
+static char *printer[] = {
+/* width height num_colors chars_per_pixel */
+"    32    22        7            1",
+/* colors */
+". c #c0c0c0",
+"# c #808080",
+"a c #000080",
+"b c #ffffff",
+"c c #000000",
+"d c #baa0a7",
+"e c #b2b2b2",
+/* pixels */
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+"eeeeeeeeeeaaaaaaaaaaeeeeeeeeeeee",
+"eeeeeeeeeeabbbbbbbbaeeeeeeeeeeee",
+"eeeeeeeeeeab#.#bbbbaeeeeeeeeeeee",
+"eeeeeeeeeeabbbbbbbbaeeeeeeeeeeee",
+"eeeeeeeeeeab#.#.##baeeeeeeeeeeee",
+"eeeeeeeeeeabbbbbbbbaeeeeeeeeeeee",
+"eeeeeeeeeeab###.##baeeeeeeeeeeee",
+"eeeeeeeeeeabbbbbbbbaeeeeeeeeeeee",
+"eeeeeeeaaaaaaaaaaaaaaaaeeeeeeeee",
+"eeeeeeeabbbbbbbbbbbbbbadeeeeeeee",
+"eeeeeeeabbbbbbbbbbbbbbadeeeeeeee",
+"eeeeeeeab.............a#deeeeeee",
+"eeeeeeeab.............a#deeeeeee",
+"eeeeeeeab.............a#deeeeeee",
+"eeeeeeeaaaaaaaaaaaaaaaa#deeeeeee",
+"eeeeeeeea.#.#.#.##.#.a##deeeeeee",
+"eeeeeeeeaaaaaaaaaaaaaa#ddeeeeeee",
+"eeeeeeeeed#############deeeeeeee",
+"eeeeeeeeeeddddddddddddddeeeeeeee",
+"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+};
